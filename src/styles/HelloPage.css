@@ -1,0 +1,70 @@
+.containerHello{
+  width: 85%;
+  margin: 100px auto 50px auto;
+  display: flex;
+  justify-content: space-between;
+  animation: fade 6s;
+}
+
+.photo {
+  width: 50%;
+  background-color: gray;
+}
+
+.texts p:nth-child(1),
+.texts p:nth-child(3) {
+  font-family: "Berkshire Swash", cursive;
+  font-size: 60px;
+  padding: 5px;
+  color: var(--title-color);
+}
+
+.texts p:nth-child(2) {
+  font-family: "Ranchers", cursive;
+  font-size: 100px;
+  color: white;
+  filter: drop-shadow(5px -0.75px 3px white);
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+@media (max-width: 767px) {
+  .containerHello {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texts{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .photo{
+      width: 90%;
+      min-height: 300px;
+      margin-top: 10px;
+  }
+
+  .texts p:nth-child(1),
+  .texts p:nth-child(3) {
+    font-family: "Berkshire Swash", cursive;
+    font-size: 30px;
+    color: var(--title-color);
+  }
+
+  .texts p:nth-child(2) {
+    font-family: "Ranchers", cursive;
+    font-size: 50px;
+    color: white;
+  }
+}
