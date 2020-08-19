@@ -1,7 +1,16 @@
 import React from 'react';
 
+import Logo from '../../assets/Logo.svg'
+
+import './style.css'
+
 function FooterPage() {
-  return <h1>Hello from FooterPage</h1>;
+  return(
+    <footer className="footerWrapper">
+      <img src={Logo} alt="Logo"/>
+      <span>Feito por MSpilari</span>
+    </footer>
+  );
 }
 
 export default FooterPage;

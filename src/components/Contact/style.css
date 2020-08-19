@@ -1,0 +1,49 @@
+.contactWrapper{
+    width: 90%;
+    margin: 20px auto 10px auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contactWrapper h1{
+    color: var(--title-color);
+    font: 400 1.8rem  Berkshire Swash;
+    margin-bottom: 10px;
+}
+
+.contactWrapper .linkedinWrapper,
+.contactWrapper .githubWrapper,
+.contactWrapper .emailWrapper{
+    display: flex;
+    width: 100%;
+    border: solid 1px var(--title-color);
+    margin-bottom: 10px;
+}
+
+.contactWrapper .linkedinWrapper a,
+.contactWrapper .githubWrapper a,
+.contactWrapper .emailWrapper a {
+    color: white;
+    margin-left: 5px;
+    
+    height: 100%;
+    text-decoration: none;
+    font: 400 1.3rem Berkshire Swash;
+}
+
+@media(min-width:768px){
+    .contactWrapper{
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 8px;
+        grid-template-areas: 
+        'titulo titulo titulo'
+        'linkedin github email';
+    }
+    
+    .contactWrapper h1{
+        grid-area: titulo;
+    }   
+}
