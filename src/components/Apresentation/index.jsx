@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../styles/HelloPage.css'
+import './HelloPage.css'
 
 function StartPart() {
   return(

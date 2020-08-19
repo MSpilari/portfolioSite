@@ -1,8 +1,9 @@
 import React from "react";
 
+import Logo from '../../assets/Logo.svg'
 import { GiHamburgerMenu } from "react-icons/gi";
 
-import "../../styles/NavBar.css";
+import "./NavBar.css";
 
 function NavBar() {
   
@@ -12,7 +13,7 @@ function NavBar() {
     <nav>
       <ul>
         <li>
-          <img src="/assets/Logo.svg" alt="Logo" />
+          <img src={Logo} alt="Logo" />
         </li>
         <li>
           <a href="#agag">Sobre</a>

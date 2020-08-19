@@ -1,11 +1,15 @@
 import React from "react";
-import '../../styles/Sobre.css'
+
+import Chill from '../../assets/Sofa.svg'
+
+import './Sobre.css'
+import AnimatedButton from "../AnimatedButton";
 
 function Sobre() {
   return (
     <div className='containerSobre'>
       <div className='Chill'>
-        <img src="/assets/Sofa.svg" alt="Chill" />
+        <img src={Chill} alt="Chill" />
       </div>
       <div className='text'>
         <p>Por que me contratar para sua empresa ?</p>
@@ -19,7 +23,7 @@ function Sobre() {
           corporis distinctio! Nesciunt, rerum sed alias optio impedit sunt
           aspernatur quis ipsa quas laborum! 
         </p>
-        <button className="swipe-button left-right">Mostrar Mais</button>
+        <AnimatedButton label={'Mostrar mais'}/>
       </div>
     </div>
   );
