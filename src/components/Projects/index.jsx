@@ -35,6 +35,38 @@ function Projetos() {
               }
               href={"https://math-flix.vercel.app/"}
           />
+          <CardProject
+              img={MathFlix}
+              title={"Mathflix"}
+              coment={
+                "Uma cópia da página principal do NetFlix, toda feita em ReactJs, consumindo uma API com alguns links paras vídeos do Youtube."
+              }
+              href={"https://math-flix.vercel.app/"}
+          />
+          <CardProject
+              img={MathFlix}
+              title={"Mathflix"}
+              coment={
+                "Uma cópia da página principal do NetFlix, toda feita em ReactJs, consumindo uma API com alguns links paras vídeos do Youtube."
+              }
+              href={"https://math-flix.vercel.app/"}
+          />
+          <CardProject
+              img={MathFlix}
+              title={"Mathflix"}
+              coment={
+                "Uma cópia da página principal do NetFlix, toda feita em ReactJs, consumindo uma API com alguns links paras vídeos do Youtube."
+              }
+              href={"https://math-flix.vercel.app/"}
+          />
+          <CardProject
+              img={MathFlix}
+              title={"Mathflix"}
+              coment={
+                "Uma cópia da página principal do NetFlix, toda feita em ReactJs, consumindo uma API com alguns links paras vídeos do Youtube."
+              }
+              href={"https://math-flix.vercel.app/"}
+          />
         </MyCarosel>
       </div>
     </div>
