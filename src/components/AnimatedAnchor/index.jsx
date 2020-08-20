@@ -11,7 +11,7 @@ const AnimatedAnchor = ({ href }) => {
         rel="noopener noreferrer"
         href={href}
       >
-        Veja
+        Ver projeto
       </a>
     </div>
   );

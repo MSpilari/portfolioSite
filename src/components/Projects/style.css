@@ -17,31 +17,6 @@
     display: flex;
 }
 
-.cardProjectWrapper{
-    width: 100%;
-    margin-right: 10px;
-    
-    display: flex;
-    flex-direction: column;
-}
-
-.imgWrapper,
-.imgWrapper img{
-    width: 100%;
-}
-
-.cardProjectWrapper span:nth-child(2){
-    color: var(--title-color);
-    font: 400 1.6rem Ranchers;
-    margin: 10px 0;
-}
-
-.cardProjectWrapper span:nth-child(3){
-    color: white;
-    font: 400 .9rem Berkshire Swash;
-    margin-bottom: 5px;
-}
-
 
 
 

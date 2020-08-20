@@ -2,6 +2,8 @@ import React from "react";
 
 import AnimatedAnchor from "../../AnimatedAnchor";
 
+import './style.css'
+
 const CardProject = ({ img, title, coment, label, href }) => {
   return (
     <div className="cardProjectWrapper">
