@@ -7,7 +7,7 @@ import AnimatedButton from "../AnimatedButton";
 
 function Sobre() {
   return (
-    <div className='containerSobre'>
+    <div id='About' className='containerSobre'>
       <div className='Chill'>
         <img src={Chill} alt="Chill" />
       </div>

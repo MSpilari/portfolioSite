@@ -16,13 +16,13 @@ function NavBar() {
           <img src={Logo} alt="Logo" />
         </li>
         <li>
-          <a href="#agag">Sobre</a>
+          <a href="#About">Sobre</a>
         </li>
         <li>
-          <a href="#agag">Portfolio</a>
+          <a href="#Projects">Pojetos</a>
         </li>
         <li>
-          <a href="#agag">Contatos</a>
+          <a href="#Contacts">Contatos</a>
         </li>
         <li className="DropDownButton">
           <button onClick={() => toggleDropDown()}>

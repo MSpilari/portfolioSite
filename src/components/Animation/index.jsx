@@ -2,11 +2,11 @@ import React from 'react'
 import Lottie from 'react-lottie'
 
 
-const Animation = ({ animation }) => {
+const Animation = ({ animation, width, height }) => {
     const defaultOptions = {
         loop: true,
         autoplay: true, 
-        animationData: animation ,
+        animationData: animation,
         rendererSettings: {
             preserveAspectRatio: 'xMidYMid slice'
         }
@@ -14,11 +14,19 @@ const Animation = ({ animation }) => {
     
     return(
         <Lottie options={defaultOptions}
-            height={'100%'}
-            width={'100%'}
+            height={height}
+            width={width}
             isStopped={false}
             isPaused={false}
-        />
+            style={{
+                display: 'flex', 
+                alignItems:'center', 
+                justifyContent:'center',
+                borderRadius:'8px'
+            }}
+        >
+            
+        </Lottie>
     )
 }
 

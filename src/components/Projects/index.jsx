@@ -7,7 +7,7 @@ import "./style.css";
 
 function Projetos() {
   return (
-    <div className="projectsWrapper">
+    <div id='Projects' className="projectsWrapper">
       <h1>Projetos</h1>
       <div className="cardsProjectWrapper">
         <MyCarosel>

@@ -22,9 +22,15 @@
     width: 100%;
     margin-bottom: 10px;
     
-    border: solid 1px var(--title-color);
+    border: solid 1px rgba(0, 0, 0, 0);
 
     border-radius: 8px;
+}
+
+.contactWrapper .linkedinWrapper:hover,
+.contactWrapper .githubWrapper:hover,
+.contactWrapper .emailWrapper:hover{
+    border: solid 1px var(--title-color);
 }
 
 .animationWrapper{
@@ -33,7 +39,7 @@
     justify-content: center;
     
     height: 100%;
-    width: 40%;
+    width: 50%;
 }
 
 .contactWrapper .linkedinWrapper a,
@@ -41,8 +47,9 @@
 .contactWrapper .emailWrapper a {
     color: white;
     margin-left: 5px;
-    width: 60%;
     
+    width: 50%;
+
     text-decoration: none;
     font: 400 1.3rem Berkshire Swash;
 }
