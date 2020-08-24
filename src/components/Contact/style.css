@@ -27,6 +27,10 @@
     border-radius: 8px;
 }
 
+.contactWrapper .emailWrapper input{
+    display: none;
+}
+
 .contactWrapper .linkedinWrapper:hover,
 .contactWrapper .githubWrapper:hover,
 .contactWrapper .emailWrapper:hover{

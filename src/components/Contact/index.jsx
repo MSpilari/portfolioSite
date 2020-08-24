@@ -7,7 +7,18 @@ import EmailAnimation from '../../assets/animations/email3.json'
 
 import './style.css'
 
-function Contatos() {
+const Contatos = () => {
+  
+  function copyEmail() {
+    const email = document.querySelector('input')
+    
+    const select = email.select(email.value)
+    
+    document.execCommand('copy')
+    console.log(select)
+  }
+  
+  
   return(
     <div id='Contacts' className="contactWrapper">
       <h1>Vamos ser amigos !</h1>
@@ -32,7 +43,8 @@ function Contatos() {
         </div>
       </div>
       <div className="emailWrapper">
-        <a href="#google.com">Email</a>
+        <a onClick={() => copyEmail()} href="#Contatos">Email</a>
+        <input readOnly value='mb.spilari@hotmail.com'></input>
         <div className="animationWrapper">
           <Animation 
               animation={EmailAnimation}
