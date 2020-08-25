@@ -3,7 +3,7 @@
 ![GitHub](https://img.shields.io/github/license/MSpilari/portfolioSite?style=plastic)
 ![GitHub last commit](https://img.shields.io/github/last-commit/MSpilari/portfolioSite?style=plastic)
 
-![Logo](./src/assets/Logo.svg)
+![Logo](./src/assets/LogoYB.svg)
 
 ## Objetivo
 
