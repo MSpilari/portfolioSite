@@ -7,7 +7,7 @@
 
 ## Veja o portfólio
 
--[MSpilari Portfólio](https://mspilariportfolio.vercel.app/)
+- [MSpilari Portfólio](https://mspilariportfolio.vercel.app/)
 
 ## Objetivo
 
