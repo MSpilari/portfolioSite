@@ -19,6 +19,8 @@ Toda a aplicação é responsiva, adaptável a diferentes tamanhos de tela.
 
 Vale ressaltar que durante a criação deste portfolio consegui entender mais sobre a biblioteca **React-Lottie**, conseguindo inserir algumas **animações** no mesmo e também coloquei um **carrossel** com a ajuda do **react-carousel**.
 
+A parte de projetos é alimentada por uma **API** própria.
+
 ## Tecnologias utilizadas
 
 - [ReactJs](https://pt-br.reactjs.org/)
