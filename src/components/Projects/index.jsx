@@ -13,7 +13,7 @@ function Projetos() {
 
   
   useEffect(() => {
-    const API_CALL = document.location.href === 'http://localhost:3333' ? 'http://localhost:3333' : process.env.API_URL 
+    const API_CALL = document.location.host === 'localhost:3000' ? 'http://localhost:3333' : process.env.API_URL 
     
     fetch(API_CALL)
       .then(response => response.json())
