@@ -1,24 +1,20 @@
 import React, { useEffect, useState } from "react";
-import dotenv from 'dotenv'
 
 import CardProject from "./CardProject";
 import MyCarosel from "../../components/Slider";
 import "./style.css";
 
-dotenv.config()
 
 function Projetos() {
 
   const [ projects, setProjects] = useState(() => [])
-  const API_CALL = process.env.API_URL
   
-  useEffect(() => {
-    const apiUrl = document.location.host === 'localhost:3000' ? 'http://localhost:3333' : API_CALL 
+  useEffect(() => { 
     
-    fetch(apiUrl)
+    fetch('https://portfolioapimspilari.herokuapp.com/')
       .then(response => response.json())
       .then(data => setProjects(data))
-  }, [API_CALL])
+  }, [])
   
   return (
     <div id='Projects' className="projectsWrapper">
