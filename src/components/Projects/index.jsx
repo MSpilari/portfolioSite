@@ -10,15 +10,15 @@ dotenv.config()
 function Projetos() {
 
   const [ projects, setProjects] = useState(() => [])
-
+  const API_CALL = process.env.API_URL
   
   useEffect(() => {
-    const API_CALL = document.location.host === 'localhost:3000' ? 'http://localhost:3333' : process.env.API_URL 
+    const apiUrl = document.location.host === 'localhost:3000' ? 'http://localhost:3333' : API_CALL 
     
-    fetch(API_CALL)
+    fetch(apiUrl)
       .then(response => response.json())
       .then(data => setProjects(data))
-  }, [])
+  }, [API_CALL])
   
   return (
     <div id='Projects' className="projectsWrapper">
