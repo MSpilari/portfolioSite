@@ -2,9 +2,14 @@ import React from 'react'
 
 import './style.css'
 
-const AnimatedButton = ({ label }) => {
+const AnimatedButton = ({ label, onClick }) => {
     return(
-        <button className="buttonSlide slideRight">{label}</button>
+        <button 
+            className="buttonSlide slideRight"
+            onClick={onClick}
+        >
+            {label}
+        </button>
     )
 }
 

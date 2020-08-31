@@ -47,20 +47,28 @@
 
 .tecnologies{
   width: 90%;
-  margin: 20px auto 5px auto;
+  margin: 20px auto 10px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.tecnologies h1{
+.tecnologies ul{
+  display: flex;
+  flex-direction: column;
+}
+
+.tecnologies ul h1{
   margin-bottom: 20px;
   font: 400 1.8rem Berkshire Swash;
   color: var(--title-color);
 }
-.tecnologies p{
+
+.tecnologies li{
   font: 400 1.4rem Ranchers;
   color: white;
+  display: block;
+  align-self: center;
 }
 
 .hide{
@@ -82,6 +90,14 @@
     'animation textp textp'
     'animation textp textp'
     'tecn img img';
+  }
+
+  .containerSobre > button{
+    display: none;
+  }
+
+  .dots{
+    display: none;
   }
 
   .chillAnimation{

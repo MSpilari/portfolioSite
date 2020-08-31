@@ -10,7 +10,6 @@ function Projetos() {
   const [ projects, setProjects] = useState(() => [])
   
   useEffect(() => { 
-    
     fetch('https://portfolioapimspilari.herokuapp.com/')
       .then(response => response.json())
       .then(data => setProjects(data))

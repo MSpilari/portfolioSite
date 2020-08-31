@@ -15,6 +15,7 @@
 .contactWrapper .linkedinWrapper,
 .contactWrapper .githubWrapper,
 .contactWrapper .emailWrapper{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,7 +29,24 @@
 }
 
 .contactWrapper .emailWrapper input{
-    display: none;
+    position: absolute;
+    top:30px;
+    left: 5px;
+    
+    width: 50%;
+    
+    font: 400 1.1rem Berkshire Swash;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--title-color);
+    
+    border: none;
+    opacity: 0;
+
+    transition: 0.8s;
+}
+
+.contactWrapper .emailWrapper button:hover + input{
+    opacity: 1;
 }
 
 .contactWrapper .linkedinWrapper:hover,
@@ -48,12 +66,15 @@
 
 .contactWrapper .linkedinWrapper a,
 .contactWrapper .githubWrapper a,
-.contactWrapper .emailWrapper a {
+.contactWrapper .emailWrapper button {
     color: white;
     margin-left: 5px;
-    
-    width: 50%;
+    text-align:center;
 
+    width: 50%;
+    outline: none;
+    
+    cursor: pointer;
     text-decoration: none;
     font: 400 1.3rem Berkshire Swash;
 }
@@ -75,14 +96,12 @@
     
     .contactWrapper .linkedinWrapper a{
         grid-area: linkedin;
-        
-        display: flex;
-        align-content: center;
+        text-align: center;       
     }
     .contactWrapper .githubWrapper a{
         grid-area: github;
     }
-    .contactWrapper .emailWrapper a{
+    .contactWrapper .emailWrapper button{
         grid-area: email;
     }
 }
