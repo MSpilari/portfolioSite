@@ -8,7 +8,13 @@
 
 .photo {
   width: 50%;
-  background-color: gray;
+  display: flex;
+  justify-content: center;
+}
+
+.photo img{
+  height: 300px;
+  border-radius: 20px;
 }
 
 .texts p:nth-child(1),
@@ -25,7 +31,11 @@
   color: white;
   filter: drop-shadow(5px -0.75px 3px white);
 }
-
+@media(min-width:767px){
+  .photo img{
+    height: 500px;
+  }
+}
 @keyframes fade {
     from{
         opacity: 0;

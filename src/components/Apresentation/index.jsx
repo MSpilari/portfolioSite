@@ -1,5 +1,6 @@
 import React from 'react';
 
+import MyImg from '../../assets/foto.png'
 import './HelloPage.css'
 
 function StartPart() {
@@ -11,7 +12,7 @@ function StartPart() {
         <p>Front-End Developer</p>
       </div>
       <div className='photo'>
-        Foto
+        <img src={MyImg} alt="Foto"/>
       </div>
     </div>
   );
