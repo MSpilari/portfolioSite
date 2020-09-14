@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 
+import api from "../../services/api";
 import CardProject from "./CardProject";
 import MyCarosel from "../../components/Slider";
+
 import "./style.css";
 
 
@@ -10,9 +12,11 @@ function Projetos() {
   const [ projects, setProjects] = useState(() => [])
   
   useEffect(() => { 
-    fetch('https://portfolioapimspilari.herokuapp.com/')
-      .then(response => response.json())
-      .then(data => setProjects(data))
+    api.get('/')
+      .then(response => {
+        const { data } = response
+        setProjects(data)
+      })
   }, [])
   
   return (

@@ -1,14 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import Logo from '../../assets/Logo.svg'
+import Logo from "../../assets/Logo.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import "./NavBar.css";
 
 function NavBar() {
-  
-  const toggleDropDown = () => document.querySelector('ul.DropDown').classList.toggle('hideDropDown')
-  
+  const toggleDropDown = () =>
+    document.querySelector("ul.DropDown").classList.toggle("hideDropDown");
+
   return (
     <nav>
       <ul>
@@ -24,6 +25,10 @@ function NavBar() {
         <li>
           <a href="#Contacts">Contatos</a>
         </li>
+        <li>
+          <Link to="/login">Login</Link>
+        </li>
+
         <li className="DropDownButton">
           <button onClick={() => toggleDropDown()}>
             <GiHamburgerMenu />
@@ -32,13 +37,16 @@ function NavBar() {
       </ul>
       <ul className="DropDown hideDropDown">
         <li>
-          <a href="#agag">Sobre</a>
+          <a href="#About">Sobre</a>
         </li>
         <li>
-          <a href="#agag">Portfolio</a>
+          <a href="#Projects">Pojetos</a>
         </li>
         <li>
-          <a href="#agag">Contatos</a>
+          <a href="#Contacts">Contatos</a>
+        </li>
+        <li>
+          <Link to="/login">Login</Link>
         </li>
       </ul>
     </nav>

@@ -1,0 +1,45 @@
+.animatedInput{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animatedInput__input{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    
+    border: none;
+    outline: none;
+    background-color: rgba(0,0,0, 0);
+    
+    font: 400 1.0rem Berkshire Swash;
+    color: white;
+
+    transition: all .1s linear;
+}
+
+.animatedInput__input:focus,
+.animatedInput__input:valid{
+    border-bottom: solid 4px var(--title-color);
+}
+
+.animatedInput__input:focus ~ .animatedInput__span,
+.animatedInput__input:valid ~ .animatedInput__span{
+    transform: translateY(-13px);
+    font-size: 0.6rem;   
+}
+
+.animatedInput__span{
+    color: var(--title-color);
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font: 400 1.1rem Ranchers;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
