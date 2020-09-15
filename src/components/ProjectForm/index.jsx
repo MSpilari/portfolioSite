@@ -15,14 +15,24 @@ const FormProjectComponent = () => {
 
     const submitForm = (event) => {
         event.preventDefault()
+        
         const { Thumbnail, Nome, Descrição, Link } = formValues
+        
+
         api.post('newProject', {
             thumbnail: Thumbnail,
             name: Nome,
             description: Descrição,
             href: Link
+        }, {
+            headers: {
+                'auth-token': localStorage.getItem('token')
+            }
         })
-        .then(res => console.log(res))
+        .then(() => {
+            alert('Projeto Cadastrado')
+            history.push('/')
+        })
         .catch(err => {
             if(err.request){
                 alert('Sua autorização não está mais válida, por favor, faça o login novamente.')
