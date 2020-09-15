@@ -17,7 +17,7 @@ const LoginForm = () => {
     
     const SubmitForm = (event) => {
         event.preventDefault()
-        api.post('/login',{
+        api.post('login',{
             name: formValues.Nome,
             password: formValues.Senha
         })
