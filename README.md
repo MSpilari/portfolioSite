@@ -5,11 +5,11 @@
 
 ![Logo](./src/assets/LogoYB.svg)
 
-## Veja o portfólio
+## :computer: Veja o portfólio
 
 - [MSpilari Portfólio](https://mspilariportfolio.vercel.app/)
 
-## Objetivo
+## :dart: Objetivo
 
 Este é o repositório onde se encontram os códigos da minha página de portfolio.
 
@@ -17,11 +17,18 @@ Ele tem por objetivo mostrar ao usuário alguns de meus dados e também reunir o
 
 Toda a aplicação é responsiva, adaptável a diferentes tamanhos de tela.
 
-Vale ressaltar que durante a criação deste portfolio consegui entender mais sobre a biblioteca **React-Lottie**, conseguindo inserir algumas **animações** no mesmo e também coloquei um **carrossel** com a ajuda do **react-carousel**.
+## :satellite: API
 
-A parte de projetos é alimentada por uma **API** própria.
+O projeto possui uma [**API**](https://github.com/MSpilari/portfolio_api) própria.
 
-## Tecnologias utilizadas
+A API possui rotas públicas e privadas.
+:no_entry_sign:
+
+## :warning: Login
+
+Existe uma parte de login no portfolio que se comunica com as rotas privadas da API, esta parte serve para cadastro e deleção de projetos do portfolio.
+
+## :package: Tecnologias utilizadas
 
 - [ReactJs](https://pt-br.reactjs.org/)
 - [React Icons](https://www.npmjs.com/package/react-icons)
